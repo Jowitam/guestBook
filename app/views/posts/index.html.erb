@@ -1,0 +1,9 @@
+<p class="lead">Witaj w naszej księdze gości!
+  <%= link_to "Dodaj własny wpis już teraz.", new_post_path %>
+</p>
+<% @posts.each do |post| %>
+  <blockquote>
+    <p><%= post.body%></p>
+    <footer><cite><%= post.author%></cite></footer>
+  </blockquote>
+<% end %>

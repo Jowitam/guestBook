@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GuestBook</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page-header">
+
+        <%if flash[:notice]%>
+          <div class="alert alert-success">
+            <%= flash[:notice]%>
+          </div>
+        <%end%>
+        <h1>Księga gości</h1>
+      </div>
+      <%= yield %>
+    </div>
+
+  </body>
+</html>
