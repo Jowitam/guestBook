@@ -9,10 +9,18 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    if @post.save
-      flash[:notice] = "Dziękujemy za wpis"
-      redirect_to posts_path
+    @post.save
+    respond_to do |format|
+      format.html do 
+        flash[:notice] = "Dziękujemy za wpis"
+        redirect_to posts_path
     end
+    format.js {}
+  end
+  end
+
+
+  def surprice
   end
 
   private 
