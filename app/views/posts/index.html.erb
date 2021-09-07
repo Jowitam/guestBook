@@ -1,6 +1,11 @@
 <p class="lead">Witaj w naszej księdze gości!
   <%= link_to "Dodaj własny wpis już teraz.", new_post_path %>
 </p>
+
+<div id="content-placeholder">
+<%= link_to "Niespodzianka", surprise_posts_path, class: "btn btn-info", remote: true%>
+</div> 
+
 <% @posts.each do |post| %>
   <blockquote>
     <p><%= post.body%></p>
