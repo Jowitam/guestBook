@@ -115,6 +115,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.12.3-x86_64-linux)
       racc (~> 1.4)
+    power_assert (1.1.7)
     public_suffix (4.0.6)
     puma (5.4.0)
       nio4r (~> 2.0)
@@ -185,6 +186,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    test-unit (3.3.5)
+      power_assert
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -225,7 +228,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
-  capybara (>= 3.26)
+  capybara
   htmlbeautifier
   jbuilder (~> 2.7)
   listen (~> 3.3)
@@ -237,6 +240,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   sqlite3 (~> 1.4)
+  test-unit
   turbolinks (~> 5)
   twitter-bootstrap-rails
   tzinfo-data
