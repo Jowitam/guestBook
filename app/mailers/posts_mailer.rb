@@ -9,6 +9,6 @@ class PostsMailer < ApplicationMailer
    @post = post
 
 
-    mail to: "to@example.org", subject: "Nowy post!" 
+    mail to: "@gmail.com", subject: "Nowy post!", from: "Jowita <@gmail.com>"
   end
 end
