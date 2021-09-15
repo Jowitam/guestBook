@@ -30,4 +30,6 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Welcome to our guestbook!"
+  index:
+    hello: "Welcome to our guestbook!"
+    select_language: "Select language (%{language})"

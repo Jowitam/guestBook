@@ -30,4 +30,6 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 pl:
-  hello: "Witaj w naszej księdzie gości!"
+  index:
+    hello: "Witaj w naszej księdzie gości!"
+    select_language: "Wybierz język (%{language})"
