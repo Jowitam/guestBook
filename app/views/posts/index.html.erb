@@ -1,17 +1,25 @@
+<pre>
+<%= I18n.localize Time.now, format: :short%>
+<%= l Date.today, format: :short %>
+<%= number_with_delimiter(1123131232.1231231231) %>
+<%= number_to_currency 1254.4444444 %>
+<%= distance_of_time_in_words(rand(10_000).seconds) %>
+</pre>
+
 <p class="lead">
-<%= t "index.hello"%>
+  <%= t "index.hello"%>
   <%= link_to "Dodaj własny wpis już teraz.", new_post_path %>
 </p>
 
- <ul class="dropdown">
- <%= t "index.select_language", language: I18n.locale%>
-    <li><%= link_to "PL", set_locale_path(locale: "pl")%></li>
-    <li><%= link_to "EN", set_locale_path(locale: "en")%></li>
-  </ul>
+<ul class="dropdown">
+  <%= t "index.select_language", language: I18n.locale%>
+  <li><%= link_to "PL", set_locale_path(locale: "pl")%></li>
+  <li><%= link_to "EN", set_locale_path(locale: "en")%></li>
+</ul>
 
 <div id="content-placeholder">
-<%= link_to "Niespodzianka", surprise_posts_path, class: "btn btn-info", remote: true%>
-</div> 
+  <%= link_to "Niespodzianka", surprise_posts_path, class: "btn btn-info", remote: true%>
+</div>
 
 <% @posts.each do |post| %>
   <blockquote>
