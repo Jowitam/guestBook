@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  root 'posts#index'
 
+ 
+  root 'posts#index'
+  get 'locale', to: 'locales#save_locale', as: :set_locale
   resources :posts do
+    
+
     collection do
       get :published
       get :surprise

@@ -1,6 +1,12 @@
-<p class="lead">Witaj w naszej księdze gości!
+<p class="lead">
+<%= t "hello"%>
   <%= link_to "Dodaj własny wpis już teraz.", new_post_path %>
 </p>
+
+ <ul class="dropdown">
+    <li><%= link_to "PL", set_locale_path(locale: "pl")%></li>
+    <li><%= link_to "EN", set_locale_path(locale: "en")%></li>
+  </ul>
 
 <div id="content-placeholder">
 <%= link_to "Niespodzianka", surprise_posts_path, class: "btn btn-info", remote: true%>
