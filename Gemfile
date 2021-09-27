@@ -63,3 +63,5 @@ gem "twitter-bootstrap-rails"
 gem 'htmlbeautifier'
 
 gem 'rails-i18n'
+
+gem 'simple_form'
