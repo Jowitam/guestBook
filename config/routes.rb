@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
  
+  devise_for :users
   root 'posts#index'
   get 'locale', to: 'locales#save_locale', as: :set_locale
   resources :posts do

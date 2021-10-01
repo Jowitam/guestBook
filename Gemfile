@@ -62,6 +62,18 @@ gem "twitter-bootstrap-rails"
 
 gem 'htmlbeautifier'
 
+# wiele jezykow
 gem 'rails-i18n'
 
+# proste formularze
 gem 'simple_form'
+
+# paginacja
+gem 'kaminari'
+
+# logowanie rejestracja
+gem 'devise'
+gem 'devise-bootstrap-views'
+
+# otwieranie email w przegladarce
+gem 'letter_opener', group: :development
