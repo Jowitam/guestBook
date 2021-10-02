@@ -24,6 +24,11 @@
         <h1>Księga gości</h1>
       </div>
       <%= yield %>
+
+      <% if user_signed_in? %>
+        <p><%= link_to "Wyloguj się", destroy_user_session_path, method: :delete %>
+        </p>
+      <% end %>
     </div>
 
   </body>

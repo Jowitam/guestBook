@@ -17,12 +17,18 @@
 <%= distance_of_time_in_words(rand(10_000).seconds) %>
 </pre>
 
-
-<p class="lead">
-  <%= t "index.hello"%>
-  <%= link_to "Dodaj własny wpis już teraz.", new_post_path %>
-</p>
-
+<% if user_signed_in? %>
+  <p class="lead">
+    <%= t "index.hello"%>
+    <%= link_to "Dodaj własny wpis już teraz.", new_post_path %>
+  </p>
+<% else %>
+  <p class="lead">
+    <%= t "index.hello"%>
+    Musisz się zalogować, aby dodać wpis.
+    <%= link_to "Zaloguj się", new_user_session_path %>
+  </p>
+<% end %>
 <div id="content-placeholder">
   <%= link_to "Niespodzianka", surprise_posts_path, class: "btn btn-info", remote: true%>
 </div>

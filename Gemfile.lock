@@ -87,6 +87,8 @@ GEM
       responders
       warden (~> 1.2.3)
     devise-bootstrap-views (1.1.0)
+    devise-i18n (1.10.0)
+      devise (>= 4.8.0)
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.3)
@@ -267,6 +269,7 @@ DEPENDENCIES
   capybara
   devise
   devise-bootstrap-views
+  devise-i18n
   htmlbeautifier
   jbuilder (~> 2.7)
   kaminari

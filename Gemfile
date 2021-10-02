@@ -74,6 +74,7 @@ gem 'kaminari'
 # logowanie rejestracja
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'devise-i18n'
 
 # otwieranie email w przegladarce
 gem 'letter_opener', group: :development
