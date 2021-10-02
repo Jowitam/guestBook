@@ -76,6 +76,14 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    carrierwave (2.2.2)
+      activemodel (>= 5.0.0)
+      activesupport (>= 5.0.0)
+      addressable (~> 2.6)
+      image_processing (~> 1.1)
+      marcel (~> 1.0.0)
+      mini_mime (>= 0.1.3)
+      ssrf_filter (~> 1.0)
     childprocess (3.0.0)
     commonjs (0.2.7)
     concurrent-ruby (1.1.9)
@@ -97,6 +105,9 @@ GEM
     htmlbeautifier (1.3.1)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
+    image_processing (1.12.1)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     kaminari (1.2.1)
@@ -131,6 +142,7 @@ GEM
       mini_mime (>= 0.1.1)
     marcel (1.0.1)
     method_source (1.0.0)
+    mini_magick (4.11.0)
     mini_mime (1.1.0)
     mini_portile2 (2.6.1)
     minitest (5.14.4)
@@ -195,6 +207,8 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    ruby-vips (2.1.3)
+      ffi (~> 1.12)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -222,6 +236,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    ssrf_filter (1.0.7)
     test-unit (3.3.5)
       power_assert
     thor (1.1.0)
@@ -267,6 +282,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara
+  carrierwave
   devise
   devise-bootstrap-views
   devise-i18n
@@ -275,6 +291,7 @@ DEPENDENCIES
   kaminari
   letter_opener
   listen (~> 3.3)
+  mini_magick
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4)

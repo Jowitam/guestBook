@@ -78,3 +78,7 @@ gem 'devise-i18n'
 
 # otwieranie email w przegladarce
 gem 'letter_opener', group: :development
+
+# obrazki
+gem 'carrierwave'
+gem 'mini_magick'

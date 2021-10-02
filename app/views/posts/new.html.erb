@@ -7,6 +7,10 @@
       <%= f.text_field :author, class: "form-control" %>
     </div>
     <div class="form-group">
+      <%= f.label :picture, "Obrazek"%>
+      <%= f.file_field :picture, class: "form-control" %>
+    </div>
+    <div class="form-group">
       <%= f.label :body, "Treść"%>
       <%= f.text_area :body, class: "form-control" %>
     </div>
@@ -15,14 +19,14 @@
   <%end%>
 </div>
 
-<div>
-<h2>Formularz simple_for</h2>
+<%# <div> %>
+<%# <h2>Formularz simple_for</h2> %>
 
-<%= simple_form_for @post do |f| %>
-<%= f.input :author, label: "Autor", hint: "Podaj nick" %>
-<%= f.input :body %>
-<%= f.submit class: "btn btn-default" %>
+<%# <%= simple_form_for @post do |f| %> 
+<%# <%= f.input :author, label: "Autor", hint: "Podaj nick" %>
+<%# <%= f.input :body %>
+<%# <%= f.submit class: "btn btn-default" %>
 
-<%end%>
+<%# <%end%>
 
-</div>
+<%# </div> %>

@@ -5,7 +5,7 @@
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
     <li><%= link_to "PL", set_locale_path(locale: "pl")%></li>
     <li><%= link_to "EN", set_locale_path(locale: "en")%></li>
-    
+
   </ul>
 </div>
 
@@ -34,10 +34,18 @@
 </div>
 
 <% @posts.each do |post| %>
-  <blockquote>
-    <p><%= post.body%></p>
-    <footer><cite><%= post.author%></cite></footer>
-  </blockquote>
+  <div class="row">
+    <div class="col-md-4">
+      <%= image_tag post.picture.url(:thumb) %>
+    </div>
+    <div class="col-md-8">
+      <blockquote>
+        <p><%= post.body%></p>
+        <footer><cite><%= post.author%></cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
 <% end %>
 
 <%= paginate @posts %>
