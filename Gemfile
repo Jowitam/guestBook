@@ -82,3 +82,6 @@ gem 'letter_opener', group: :development
 # obrazki
 gem 'carrierwave'
 gem 'mini_magick'
+
+# do kolejkowania zadan
+gem 'delayed_job_active_record'

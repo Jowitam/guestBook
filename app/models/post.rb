@@ -4,8 +4,9 @@ class Post < ApplicationRecord
     after_create :notify_admin
 
     mount_uploader :picture, PictureUploader
+
     def notify_admin
-        PostsMailer.new_post_notification(self).deliver
+       PostFetchJob.perform_later(self)
     end
 
     private

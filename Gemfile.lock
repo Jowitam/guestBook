@@ -88,6 +88,11 @@ GEM
     commonjs (0.2.7)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    delayed_job (4.1.9)
+      activesupport (>= 3.0, < 6.2)
+    delayed_job_active_record (4.1.6)
+      activerecord (>= 3.0, < 6.2)
+      delayed_job (>= 3.0, < 5)
     devise (4.8.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -283,6 +288,7 @@ DEPENDENCIES
   byebug
   capybara
   carrierwave
+  delayed_job_active_record
   devise
   devise-bootstrap-views
   devise-i18n
